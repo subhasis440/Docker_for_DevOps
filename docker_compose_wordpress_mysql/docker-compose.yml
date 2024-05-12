@@ -3,7 +3,7 @@ version: '3' #Version of YML file
 services:
   # MySQL Service
   db:
-    image: mysql:latest
+    image: mysql:8.0
     container_name: mysql-container
     restart: always
     environment:
@@ -43,4 +43,3 @@ volumes:
 networks:
   wordpress_network:
     driver: bridge
-  
