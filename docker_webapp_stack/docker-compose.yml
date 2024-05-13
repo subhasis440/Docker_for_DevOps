@@ -4,11 +4,11 @@ services:
   web:
     # Pull the Image from Repository.
     # replace username/repo:tag with your name and image details
-    image: username/repo:tag 
+    image: subhasis440/web_app:1.0 
     # Command used to deploy the Service
     deploy:
       # Run 5 instances of that image as a service called web
-      replicas: 5
+      replicas: 2
       resources:
         # Limiting each one to use, at most, 10% of a single core of CPU time and 50MB of RAM.
         limits:
